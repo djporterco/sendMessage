@@ -8,10 +8,16 @@ Follow these instructions to set up Twilio account...
 
 ### Usage
 
-save as `sendMessage.py` in directory
+Install twilio
+
+`pip install twilio`
+
+save file as `sendMessage.py` in directory
 
 Import message notifier
 
 `from sendMessage import sendmessage as sm`
+
+try it out..
 
 `sm('test)`
