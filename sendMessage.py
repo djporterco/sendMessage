@@ -1,15 +1,14 @@
 
 # coding: utf-8
 
-# In[21]:
-
+# https://www.twilio.com/docs/notify/quickstart/sms
 
 from twilio.rest import Client
 
 def sendmessage(body):
-    sid = 'ACb387d0e71fac88acc5e784e18ceedc80'
-    auth_token ='53eac279a29e28e023431ec8680ffc4a'
+        sid = '[YOUR_SID_CODE_HERE]'
+    auth_token ='[YOUR_AUTH_CODE_HERE]'
     client = Client(sid, auth_token)
-    message = client.messages.create(to="13607420068",from_="12062028871  ",body=body)
+    message = client.messages.create(to="[YOUR_NUMBER]",from_="[YOUR_TWILIO_NUMBER]  ",body=body)
 
 sendmessage('test')
